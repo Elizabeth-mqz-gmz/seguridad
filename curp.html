@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CURP</title>
+		<meta charset='UTF-8'/>
+		<style>
+			body{
+				text-align: center;
+				background: pink;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<form action = 'val.php' method = 'GET'>
+			Nombre:<input type='text' id='nom' name='nom' size='20' maxlength='20'/><br/><br/>
+			Apellidos:<input type='text' id='nom' name='ape' size='30' maxlength='30'/><br/><br/>
+			Número de cuenta:<input type='number' id='numcta' name='numcta' pattern='[0-9]{9,9}' type='range' min='0' size='9'/><br/><br/>
+			Contraseña:<input type='text' id='contra' name='contra' pattern='(?=^.{9,}$)((?=.\d)|(?=.\W+))(?![.\n])(?=.[A-Z])(?=.[a-z]).*$' size='15'/>
+			<br/>(La contraseña deberá contener mínimo 9 carcateres, una mayúscula, una minúscula, un número y un caracter especial)<br/><br/>
+			Celular:<input type='number' id='tel' name='tel' pattern='[0-9]{10,10}' size='10'/><br/><br/>
+			Email:<input type='text' id='email' name='email' size='25'/><br/>
+			(Sólo se admiten emails pertenecientes a "gmail" o "comunidad.unam.mx")<br/><br/>
+			CURP:<input type='text' id='curp' name='curp' pattern='[A-Z]{4}[0-9]{6}[A-Z]{6}[0-9]{2}' size='18' maxlength='18'/><br/><br/>
+			<br/><input type='submit' value='Enviar'/>
+				<input type='reset' value='Borrar' />
+		</form>
+	</body>
+</html>
