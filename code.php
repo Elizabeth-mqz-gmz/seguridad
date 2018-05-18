@@ -166,16 +166,17 @@
 		//echo $texto;
 		$arre = [];
 		$i = 0;
-			for($ren=0; $ren<$mat; $ren++)
 				for($col=0; $col<$key; $col++)
+					for($ren=0; $ren<$mat; $ren++)
 				{
 					$arre[$ren][$col] = $texto[$i];
 					$i++;
+					//echo $arre[$ren][$col];
 				}
 		//print_r ($arre);
 		echo '<br/>';
-		for($col=0; $col<$key; $col++)
-			for($ren=0; $ren<$mat; $ren++)
+		for($ren=0; $ren<$mat; $ren++)
+			for($col=0; $col<$key; $col++)
 				echo $arre[$ren][$col];
 	}
 ?>
