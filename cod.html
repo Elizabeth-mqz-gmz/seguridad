@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>Codificación</title>
+		<meta charset='UTF-8'/>
+	</head>
+	<body>
+		<form action = 'code.php' method = 'POST'>
+		Ingresa una palabra:
+		<input type='text' name='texto'/><br/>
+		Sistema de codificación propio:
+		<input type='radio' name='codif' value='1'><br/>
+		Sistema de descodificación propio:
+		<input type='radio' name='codif' value='2'><br/>
+		Hash:
+		<input type='radio' name='codif' value='3'><br/>
+		Cifrado simétrico:
+		<input type='radio' name='codif' value='4'><br/>
+		Descifrado simétrico:
+		<input type='radio' name='codif' value='5'><br/>
+		Cifrado Playfair:
+		<input type='radio' name='codif' value='6'><br/>
+		Descifrado Playfair:
+		<input type='radio' name='codif' value='7'><br/>
+		En caso de usar playfair, ingresa tu llave:
+		<input type='number' name='llave' type='range' min='2' max='15'>
+		<input type='submit'/>
+	</body>
+</html>
